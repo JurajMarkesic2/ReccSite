@@ -4,57 +4,59 @@ from general.forms import quizForm
 from django.http import HttpResponseRedirect
 
 def index(request):              #home page view, renders home.html, survey form in here, submit form to get the result
+	qForm = quizForm
 	if request.method == 'POST':    #check if POST method is use, if it is check if the form is valid, if it is it declared variables and runs a test to see which result we will server the client
-		form = quizForm(request.POST)
+		form = qForm(data=request.POST)
 		if form.is_valid():
 			firstQ = request.POST.get('firstQ','')
 			secondQ = request.POST.get('secondQ','')
 			thirdQ = request.POST.get('thirdQ','')
 			fourthQ = request.POST.get('fourthQ','')
 
-			if firstQ == 'yes':
-				if secondQ == 'yes':
-					if thirdQ == 'yes':
-						if fourthQ == 'yes':
+
+			if firstQ == 'True':
+				if secondQ == 'True':
+					if thirdQ == 'True':
+						if fourthQ == 'True':
 							idv = 1
 						else:
 							idv = 2
 					else:
-						if fourthQ == 'yes':
+						if fourthQ == 'True':
 							idv = 3
 						else:
 							idv = 4
 				else:
-					if thirdQ == 'yes':
-						if fourthQ == 'yes':
+					if thirdQ == 'True':
+						if fourthQ == 'True':
 							idv = 5
 						else:
 							idv = 6
 					else:
-						if fourthQ == 'yes':
+						if fourthQ == 'True':
 							idv = 7
 						else:
 							idv = 8
 			else:
-				if secondQ == 'yes':
-					if thirdQ == 'yes':
-						if fourthQ == 'yes':
+				if secondQ == 'True':
+					if thirdQ == 'True':
+						if fourthQ == 'True':
 							idv = 9
 						else:
 							idv = 10
 					else:
-						if fourthQ == 'yes':
+						if fourthQ == 'True':
 							idv = 11
 						else:
 							idv = 12
 				else:
-					if thirdQ == 'yes':
-						if fourthQ == 'yes':
+					if thirdQ == 'True':
+						if fourthQ == 'True':
 							idv = 13
 						else:
 							idv = 14
 					else:
-						if fourthQ == 'yes':
+						if fourthQ == 'True':
 							idv = 15
 						else:
 							idv = 16
