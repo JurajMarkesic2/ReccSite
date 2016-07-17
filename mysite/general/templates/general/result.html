@@ -1,6 +1,76 @@
 {% extends 'general/default.html' %}
 
 {% block content %}
-	<p>yo</p>
-	<p> {{ res.title }}</p>
+	<h2> {{ res.title }} </h2>
+	<p> {{ res.description }} </p>
+	
+	<ul>
+		<li>Movies:
+			<ul>
+				<li>{{ res.movies_name1 }}</li>
+				<li>{{ res.movies_link1 }}</li>
+				<li>{{ res.movies_name2 }}</li>
+				<li>{{ res.movies_link2 }}</li>
+				<li>{{ res.movies_name3 }}</li>
+				<li>{{ res.movies_link3 }}</li>
+				<li>{{ res.movies_name4 }}</li>
+				<li>{{ res.movies_link4 }}</li>
+				<li>{{ res.movies_name5 }}</li>
+				<li>{{ res.movies_link5 }}</li>
+			</ul>
+		</li>
+	</ul>
+
+	<ul>
+		<li>Books:
+			<ul>
+				<li>{{ res.books_name1 }}</li>
+				<li>{{ res.books_link1 }}</li>
+				<li>{{ res.books_name2 }}</li>
+				<li>{{ res.books_link2 }}</li>
+				<li>{{ res.books_name3 }}</li>
+				<li>{{ res.books_link3 }}</li>
+				<li>{{ res.books_name4 }}</li>
+				<li>{{ res.books_link4 }}</li>
+				<li>{{ res.books_name5 }}</li>
+				<li>{{ res.books_link5 }}</li>
+			</ul>
+		</li>
+	</ul>
+
+	<ul>
+		<li>Songs:
+			<ul>
+				<li>{{ res.songs_name1 }}</li>
+				<li>{{ res.songs_link1 }}</li>
+				<li>{{ res.songs_name2 }}</li>
+				<li>{{ res.songs_link2 }}</li>
+				<li>{{ res.songs_name3 }}</li>
+				<li>{{ res.songs_link3 }}</li>
+				<li>{{ res.songs_name4 }}</li>
+				<li>{{ res.songs_link4 }}</li>
+				<li>{{ res.songs_name5 }}</li>
+				<li>{{ res.songs_link5 }}</li>
+			</ul>
+		</li>
+	</ul>
+
+	<ul>
+		<li>Series:
+			<ul>
+				<li>{{ res.series_name1 }}</li>
+				<li>{{ res.series_link1 }}</li>
+				<li>{{ res.series_name2 }}</li>
+				<li>{{ res.series_link2 }}</li>
+				<li>{{ res.series_name3 }}</li>
+				<li>{{ res.series_link3 }}</li>
+				<li>{{ res.series_name4 }}</li>
+				<li>{{ res.series_link4 }}</li>
+				<li>{{ res.series_name5 }}</li>
+				<li>{{ res.series_link5 }}</li>
+			</ul>
+		</li>
+	</ul>
+	
 {% endblock %}	
+
