@@ -79,8 +79,8 @@ def result(request, id):        #result page view, renders result.html --needs t
          'res' : res, })  
 
      
-#def about(request):             #about page view, renders about.html  -- static page, simple
-	#return	  
+def about(request):             #about page view, renders about.html  -- static page, simple
+	return render(request, 'general/about.html')
 
  
 #def contact(request):           #contact page view, renders contact.html	--- needs contact app (downloadable) and email setup
