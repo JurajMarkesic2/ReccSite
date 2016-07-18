@@ -1,7 +1,13 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect, render_to_response
 from general.models import Result
-from general.forms import quizForm
+from general.forms import quizForm, ContactForm
 from django.http import HttpResponseRedirect
+from django.template.loader import get_template
+from django.core.mail import EmailMessage, send_mail
+from django.template import RequestContext
+from django.conf import settings
+from django.template import Context
+
 
 def index(request):              #home page view, renders home.html, survey form in here, submit form to get the result
 	qForm = quizForm
@@ -83,6 +89,41 @@ def about(request):             #about page view, renders about.html  -- static 
 	return render(request, 'general/about.html')
 
  
-#def contact(request):           #contact page view, renders contact.html	--- needs contact app (downloadable) and email setup
-	#return
+def contact(request):           #contact page view, renders contact.html	--- needs contact app (downloadable) and email setup
+    form_class = ContactForm     
+    success = False
+    success_msg="Your messege was sent successfully!"
+    if request.method == 'POST':
+        form = form_class(data=request.POST)
+
+        if form.is_valid():
+            contact_name = request.POST.get('contact_name', '')
+            contact_email = request.POST.get('contact_email', '')
+            form_content = request.POST.get('content', '')
+
+            template = get_template('general/contact_template.txt')
+            context = Context({
+                'contact_name': contact_name,
+                'contact_email': contact_email,
+                'form_content': form_content,
+            })
+            content = template.render(context)
+
+            email = EmailMessage(     
+                "New contact form submission",
+                form_content,
+                'xyz@gmail.com',
+                [settings.EMAIL_HOST_USER],
+                headers = {'Reply-To': contact_email})
+            email.send(fail_silently=False)
+            success = True
+
+            return render_to_response('general/contact.html',
+                        {'form' : form_class,'success': success,'success_msg':success_msg}, context_instance=RequestContext(request))
+                          
+
+    return render(request, 'general/contact.html', {
+        'form': form_class,
+    })
+
 		
