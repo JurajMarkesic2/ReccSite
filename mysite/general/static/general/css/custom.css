@@ -18,7 +18,7 @@
     color: #56527F;
     background-color: #FBECD5;
 }
-#testBut:active{
+#testBut:not(.no-hover):active{
     color: #56527F;
     box-shadow: none;
     
