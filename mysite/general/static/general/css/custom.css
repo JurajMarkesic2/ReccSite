@@ -14,14 +14,15 @@
     text-transform: uppercase;
 }
 
-#testBut:hover {
+#testBut:not(.no-hover):hover {
     color: #56527F;
+    background-color: #FBECD5;
 }
 #testBut:active{
     color: #56527F;
     box-shadow: none;
+    
 }
-
 
 /***********************
   Logo
@@ -39,5 +40,14 @@
 }
 
 #desc {
-    margin-top: 3%;
+    margin-top: 1%;
 }
+@media (min-width:768px) {
+    #row1 {
+        margin-top: 3%;
+    }
+
+    #row2 {
+        margin-top: 5%;
+    }
+}    

@@ -16,7 +16,7 @@
 </head>
 
 <body>
-	<img id="logo" src="{% static 'general/img/logo-placeholder.jpg' %}" class="responsive-img center-block" alt="logo">
+	<a href="{% url 'index' %}"><img id="logo" src="{% static 'general/img/logo-placeholder.jpg' %}" class="responsive-img center-block" alt="logo"></a>
 	<div>
 		{% block content %}
 
