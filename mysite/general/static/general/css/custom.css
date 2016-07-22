@@ -7,7 +7,8 @@
   CUSTON BTN VALUES
 ************************/
 
-.btn {
+#testBut {
+    background-color: #FBECD5;
     padding: 14px 24px;
     border: 0 none;
     color: #1d1d1d;
@@ -15,21 +16,3 @@
     letter-spacing: 3px;
     text-transform: uppercase;
 }
-.btn:focus, .btn:active:focus, .btn.active:focus {
-    outline: 0 none;
-}
-
-.btn-primary {
-    background: #fbecd5;
-    color: #1d1d1d;
-}
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-    background: #fbecd5;
-    color: #56527F;
-}
-.btn-primary:active, .btn-primary.active {
-    background: #fbecd5;
-    color: #56527F;
-    box-shadow: none;
-}
-
