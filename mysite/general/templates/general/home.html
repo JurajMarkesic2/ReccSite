@@ -4,20 +4,35 @@
 
 <title> YAWNAWAY </title>
 
+<script>
+	function show (toBlock){
+		setDisplay(toBlock, 'block');
+	}
+	  
+	function setDisplay (target, str) {
+		document.getElementById(target).style.display = str;
+	}
+	  
+	function setText (target) {
+		document.getElementById(target).textContent="CHOOSE THE SIDE YOU FEEL CLOSER TO"
+	}
+</script>
+
 <p>YAWNAWAY is your solution to boredom!</p>
 
 <p>Solve a simple personality test and discover something you might like!</p>
 
-<button type="button"   id="testBut" class="btn btn-primary btn-lg sharp">TAKE THE TEST</button>
+<button type="button" id="testBut" id="clickID" onclick="show('test'); setText('testBut')" class="btn btn-primary btn-lg sharp">TAKE THE TEST</button>
 
-
-<form name="form" action="" method="POST">
-    {% csrf_token %}
-   
-    {{ form.as_p }}
-    
-    <input type="submit" value="OK">
-</form>
+<div id="test" style="display:none;">
+	<form name="form" action="" method="POST">
+		{% csrf_token %}
+	   
+		{{ form.as_p }}
+		
+		<input type="submit" value="OK">
+	</form>
+</div>
 
 <hr>
 
