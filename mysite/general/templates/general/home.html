@@ -6,7 +6,6 @@
 
 <script>
 	var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
-	var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
 	
 	function show (toBlock){
 		setDisplay(toBlock, 'block');
@@ -25,30 +24,33 @@
       document.activeElement.blur();
       document.getElementById(target).setAttribute('disabled', 'disabled');
       
-      if (w <= 768){
-			document.getElementById(target).setAttribute('style', 'font-size: 2.5vw;');
+      if (w < 768){
+			document.getElementById(target).setAttribute('style', 'font-size: 2.9vw;');
 		}
 	}
 
 </script>
 <div class="container">
 	<div class="row">
-		<h3 id="title" class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">YAWNAWAY is your solution to boredom!</h3>
+		<h3 id="title" class="homeHead col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2"><i id="yawnawayTitle">YAWNAWAY</i> is your solution to boredom!</h3>
 	</div>
 	<div class="row">	
-		<p id="desc" class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">Solve a simple personality test and discover something you might like!</p>
+		<p id="desc" class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2"><i>Solve a simple personality test and discover something you might like!</i></p>
 	</div>
 	<div class="row">
-		<button id="testBut" type="button" id="clickID" onclick="show('test'); setText('testBut'); removeEffect('testBut');" class="btn btn-primary btn-lg sharp col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">TAKE THE TEST</button>
+		<button id="testBut" type="button" id="clickID" onclick="show('test'); setText('testBut'); removeEffect('testBut');" class="btn btn-primary btn-lg sharp col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">TAKE THE TEST</button>
+		<div>
+			<i id="arrows" class="glyphicon glyphicon-chevron-down col-xs-2 col-xs-offset-3 col-sm-2 col-sm-offset-3 col-md-2 col-md-offset-3" aria-hidden="true"></i>	<i id="arrows" class="glyphicon glyphicon-chevron-down col-xs-2 col-xs-offset-0 col-sm-2 col-sm-offset-0 col-md-2 col-md-offset-0" aria-hidden="true"></i>	<i id="arrows" class="glyphicon glyphicon-chevron-down col-xs-2 col-xs-offset-0 col-sm-2 col-sm-offset-0 col-md-2 col-md-offset-0" aria-hidden="true"></i>
+		</div>
 	</div>
 	<div class="row">
-		<div id="test" style="display:none;">
+		<div id="test" style="display:none;" class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
 			<form name="form" action="" method="POST">
 				{% csrf_token %}
 			   
 				{{ form.as_p }}
 				
-				<input id="submit" class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5 col-md-2 col-md-offset-5" type="submit" value="SUBMIT">
+				<input id="submit" class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5" type="submit" value="SUBMIT">
 			</form>
 		</div>
 	</div>
