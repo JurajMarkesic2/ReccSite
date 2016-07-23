@@ -5,6 +5,9 @@
 <title> YAWNAWAY </title>
 
 <script>
+	var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+	var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+	
 	function show (toBlock){
 		setDisplay(toBlock, 'block');
 	}
@@ -21,29 +24,33 @@
       document.getElementById(target).classList.add("no-hover");
       document.activeElement.blur();
       document.getElementById(target).setAttribute('disabled', 'disabled');
+      
+      if (w <= 768){
+			document.getElementById(target).setAttribute('style', 'font-size: 2.5vw;');
+		}
 	}
 
 </script>
-
-<p>YAWNAWAY is your solution to boredom!</p>
-
-<p>Solve a simple personality test and discover something you might like!</p>
-
-<button id="testBut" type="button" id="clickID" onclick="show('test'); setText('testBut'); removeEffect('testBut');" class="btn btn-primary btn-lg sharp">TAKE THE TEST</button>
-
-<div id="test" style="display:none;">
-	<form name="form" action="" method="POST">
-		{% csrf_token %}
-	   
-		{{ form.as_p }}
-		
-		<input type="submit" value="OK">
-	</form>
+<div class="container">
+	<div class="row">
+		<h3 id="title" class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">YAWNAWAY is your solution to boredom!</h3>
+	</div>
+	<div class="row">	
+		<p id="desc" class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">Solve a simple personality test and discover something you might like!</p>
+	</div>
+	<div class="row">
+		<button id="testBut" type="button" id="clickID" onclick="show('test'); setText('testBut'); removeEffect('testBut');" class="btn btn-primary btn-lg sharp col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">TAKE THE TEST</button>
+	</div>
+	<div class="row">
+		<div id="test" style="display:none;">
+			<form name="form" action="" method="POST">
+				{% csrf_token %}
+			   
+				{{ form.as_p }}
+				
+				<input id="submit" class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5 col-md-2 col-md-offset-5" type="submit" value="SUBMIT">
+			</form>
+		</div>
+	</div>
 </div>
-
-<hr>
-
-<p>About</p>
-<p>Contact</p>
-
 {% endblock %}	

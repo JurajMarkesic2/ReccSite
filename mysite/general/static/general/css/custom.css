@@ -1,5 +1,5 @@
 /***********************
-  CUSTON BTN VALUES
+  Home page
 ************************/
 .sharp {
     border-radius: 0
@@ -12,6 +12,7 @@
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
+    margin-top: 5%;
 }
 
 #testBut:not(.no-hover):hover {
@@ -21,9 +22,25 @@
 #testBut:not(.no-hover):active{
     color: #56527F;
     box-shadow: none;
-    
 }
 
+#submit {
+	color: #1d1d1d;
+	background-color: #fbecd5;
+	border: none;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+
+#submit:hover {
+	color: #56527f;
+}
+
+@media (max-width: @screen-xs-max) {
+	#submit {
+		font-size: 4.5vw;
+	}
+}
 /***********************
   Logo
 ************************/
@@ -37,11 +54,14 @@
 ************************/
 #title {
     margin-top: 5%;
+    text-align: center;
 }
 
 #desc {
     margin-top: 1%;
+    text-align: center;
 }
+
 @media (min-width:768px) {
     #row1 {
         margin-top: 3%;
