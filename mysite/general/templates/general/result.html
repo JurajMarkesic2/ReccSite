@@ -1,11 +1,12 @@
 {% extends 'general/default.html' %}
 
 {% block content %}
+	{% load staticfiles %}
 	<title> {{res.title}} - Site name </title>
-
 	<div class="container">
+		<img id="typeIMG" src="{% static 'general/img/chess.jpg' %}" class="responsive-img center-block" alt="type photo" style="max-width:60%">
 		<div class="row">	
-			<h2 id="title" class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4"> {{ res.title }} </h2>
+			<h2 id="title" class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4" > {{ res.title }} </h2>
 		</div>	
 		<div class="row">		
 			<p id="desc" class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4"> {{ res.description }} </p>
