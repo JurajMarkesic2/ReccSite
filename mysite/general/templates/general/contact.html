@@ -2,14 +2,14 @@
 
 {% block content %}
 	<title>Contact - Site name</title>
-	<div>
+	<div id="ctIntro">
 		<p>Have some questions or feedback? Feel free to contact us.</p>
 	</div>
 
-	<form role="form" action="" method="post">
+	<form id="ctForm" role="form" action="" method="post">
     	{% csrf_token %}
     	{{ form.as_p }}
-   		<button type="submit">Send</button>
+   		<button type="submit" class="btn btn-primary" style="background-color: #56527f;">Send</button>
 	</form>
 	
 	{% if success %}

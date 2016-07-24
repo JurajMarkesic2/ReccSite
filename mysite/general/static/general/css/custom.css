@@ -167,4 +167,44 @@ body {
 }    
 .footBut {
     background-color: #FBECD5;
- }
+    color: #56527f;
+    font-weight: bold;
+  }
+ 
+
+@media (max-width: 767px) {
+    #footHR {
+        margin-right: 270px;
+        width: 100%;
+         }
+     }
+
+
+
+/***********************
+  about
+************************/     
+
+#aboutTitle {
+    margin-top: 5%;
+}
+
+#aboutContent {
+    margin-top: 2%;
+}
+
+
+/***********************
+  contact
+************************/     
+
+#ctIntro {
+    margin-top: 5%;
+    font-weight: bold;
+    text-indent: 3%;
+
+}
+
+#ctForm {
+    margin-top: 3%;
+}
