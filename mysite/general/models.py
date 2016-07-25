@@ -1,9 +1,13 @@
 from django.db import models
 
+
+
 class Result(models.Model):
 	title = models.CharField(max_length=140)  #the name of their personality e.g. Arhitect
 	
 	description = models.TextField() #short description of their personality and what kind of content they like
+
+	typeImg = models.URLField(blank=True, null=True)
 
 	movies_name1 = models.CharField(max_length=160, default="name")  #name of the movie/book/song/tv-show
 	movies_link1 = models.URLField(default="https://www.amazon.com")      #our affiliate link to that movie/book/song/tv-show on Amazon,iTunes, etc...

@@ -4,7 +4,7 @@
 	{% load staticfiles %}
 	<title> {{res.title}} - Site name </title>
 	<div class="container">
-		<img id="typeIMG" src="{% static 'general/img/chess.jpg' %}" class="responsive-img center-block" alt="type photo" style="max-width:60%">
+		<img id="typeIMG" src={{ res.typeImg }} class="responsive-img center-block" alt="type photo" style="max-width:60%">
 		<div class="row">	
 			<h2 id="title" class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4" > {{ res.title }} </h2>
 		</div>	
