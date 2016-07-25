@@ -110,12 +110,18 @@ input[type='radio']:checked:after {
 ************************/
 
 #logo {
+    margin-top: 1%;
 
 }
 
 /***********************
   Result page
 ************************/
+
+#typeIMG {
+    margin-top: 4%;
+}
+
 #title {
     margin-top: 5%;
     text-align: center;
