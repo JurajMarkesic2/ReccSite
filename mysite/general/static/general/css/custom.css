@@ -188,16 +188,17 @@ input[type='radio']:checked:after {
 		display: block;
 		position: relative;
 		right: 15%;
+        font-size: 13px;
 	}
 	
 	.leftDesc {
 		position: relative;
-		left: 1%;
+		left: -10%;
 	}
 
 	.rightDesc {
 		position: relative;
-		right: 0%;
+		left: 5%;
 	}
 }
 
