@@ -25,6 +25,10 @@
     box-shadow: none;
 }
 
+#testBut[disabled] {
+    cursor: default;
+}
+
 #submit {
 	color: #1d1d1d;
 	background-color: #fbecd5;
@@ -68,7 +72,7 @@ form ul {
 form li {
 	margin-top: 2%;
 	margin-bottom: 2%;
-	margin-left: 17%;
+	margin-left: 14%;
 	margin-right: 17%;
 	display: inline-block;
 }
@@ -149,6 +153,16 @@ input[type='radio']:checked:after {
 		position: relative;
 		left: 7.5%;
 	}
+	
+	form li {
+		margin-top: 2%;
+		margin-bottom: 2%;
+		margin-left: 30%;
+		margin-right: 30;
+		display: inline-block;
+		position: relative;
+		right: 10%;
+	}
 }
 
 @media (max-width: 767px) {
@@ -157,21 +171,33 @@ input[type='radio']:checked:after {
 	}
 	
 	form li {
-	margin-top: 2%;
-	margin-bottom: 2%;
-	margin-left: 11%;
-	margin-right: 11%;
-	display: inline-block;
+		margin-top: 2%;
+		margin-bottom: 2%;
+		margin-left: 20%;
+		margin-right: 20%;
+		display: inline-block;
+		position: relative;
+		right: 10%;
+	}
+	
+	.itemDesc {
+		margin-top: 0%;
+		margin-bottom: 0%;
+		margin-left: 0%;
+		margin-right: 0%;
+		display: block;
+		position: relative;
+		right: 15%;
 	}
 	
 	.leftDesc {
 		position: relative;
-		left: -25%;
+		left: 1%;
 	}
 
 	.rightDesc {
 		position: relative;
-		left: 25%;
+		right: 0%;
 	}
 }
 
