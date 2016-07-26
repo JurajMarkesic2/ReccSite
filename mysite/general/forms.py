@@ -10,7 +10,7 @@ class quizForm(forms.Form):
                                                             (False, 'Feeling')]))
 	fourthQ = forms.BooleanField(label='Forth question',required=False,initial=True,widget=RadioSelect(choices=[(True, 'Judging'), 
                                                             (False, 'Perceiving')]))
-
+	
 
 class ContactForm(forms.Form):
     contact_name = forms.CharField(required=True)    

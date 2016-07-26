@@ -44,11 +44,89 @@
 		</div>
 	</div>
 	<div class="row">
-		<div id="test" style="display:none;" class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+		<div id="test" style="display:none;" class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
 			<form name="form" action="" method="POST">
 				{% csrf_token %}
 			   
-				{{ form.as_p }}
+			   <div class="Option">
+					
+					{{ form.firstQ }}
+					
+					<div class="descs">
+						<ul class="traitDesc leftDesc">
+							<li>Alpha af</li>
+							<li>OG</li>
+							<li>Look at me</li>
+						</ul>
+						
+						<ul class="traitDesc rightDesc">
+							<li>Shy af</li>
+							<li>Wallflower</li>
+							<li>Y u looking at me</li>
+						</ul>
+					</div>
+					
+				</div>
+
+				<div class="Option2">
+					
+					{{ form.secondQ }}
+					
+					<div class="descs">
+						<ul class="traitDesc leftDesc">
+							<li>Alpha af</li>
+							<li>OG</li>
+							<li>Look at me</li>
+						</ul>
+						
+						<ul class="traitDesc rightDesc">
+							<li>Shy af</li>
+							<li>Wallflower</li>
+							<li>Y u looking at me</li>
+						</ul>
+					</div>
+					
+				</div>
+				
+				<div class="Option2">
+					
+					{{ form.thirdQ }}
+					
+					<div class="descs">
+						<ul class="traitDesc leftDesc">
+							<li>Alpha af</li>
+							<li>OG</li>
+							<li>Look at me</li>
+						</ul>
+						
+						<ul class="traitDesc rightDesc">
+							<li>Shy af</li>
+							<li>Wallflower</li>
+							<li>Y u looking at me</li>
+						</ul>
+					</div>
+					
+				</div>
+				
+				<div class="Option2">
+					
+					{{ form.fourthQ }}
+					
+					<div class="descs">
+						<ul class="traitDesc leftDesc">
+							<li>Alpha af</li>
+							<li>OG</li>
+							<li>Look at me</li>
+						</ul>
+						
+						<ul class="traitDesc rightDesc">
+							<li>Shy af</li>
+							<li>Wallflower</li>
+							<li>Y u looking at me</li>
+						</ul>
+					</div>
+					
+				</div>
 				
 				<input id="submit" class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5" type="submit" value="SUBMIT">
 			</form>
