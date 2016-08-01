@@ -265,6 +265,267 @@ input[type='radio']:checked:after {
     }
 }    
 
+.listItems {
+    line-height: 350%;
+
+}
+
+.resultIcon1 {
+    float:left;
+    margin-right: 30px;
+}
+/************************************************************************/
+.resultIcons1 {
+    line-height: 100%;
+    visibility: hidden;
+}
+
+
+#item1:hover .resultIcons1 {
+    visibility: visible;
+}
+
+/************************************************************************/
+
+
+.resultIcons2 {
+    line-height: 100%;
+    visibility: hidden;
+}
+
+
+#item2:hover .resultIcons2 {
+    visibility: visible;
+}
+
+/************************************************************************/
+
+.resultIcons3 {
+    line-height: 100%;
+    visibility: hidden;
+}
+
+
+#item3:hover .resultIcons3 {
+    visibility: visible;
+}
+
+/************************************************************************/
+
+.resultIcons4 {
+    line-height: 100%;
+    visibility: hidden;
+}
+
+
+#item4:hover .resultIcons4 {
+    visibility: visible;
+}
+
+/************************************************************************/
+
+.resultIcons5 {
+    line-height: 100%;
+    visibility: hidden;
+}
+
+
+#item5:hover .resultIcons5 {
+    visibility: visible;
+}
+
+
+/************************************************************************/
+
+.resultIcons6 {
+    line-height: 100%;
+    visibility: hidden;
+}
+
+
+#item6:hover .resultIcons6 {
+    visibility: visible;
+}
+
+
+/************************************************************************/
+
+.resultIcons7 {
+    line-height: 100%;
+    visibility: hidden;
+}
+
+
+#item7:hover .resultIcons7 {
+    visibility: visible;
+}
+
+
+/************************************************************************/
+
+.resultIcons8 {
+    line-height: 100%;
+    visibility: hidden;
+}
+
+
+#item8:hover .resultIcons8 {
+    visibility: visible;
+}
+
+
+/************************************************************************/
+
+.resultIcons9 {
+    line-height: 100%;
+    visibility: hidden;
+}
+
+
+#item9:hover .resultIcons9 {
+    visibility: visible;
+}
+
+
+/************************************************************************/
+
+.resultIcons10 {
+    line-height: 100%;
+    visibility: hidden;
+}
+
+
+#item10:hover .resultIcons10 {
+    visibility: visible;
+}
+
+
+/************************************************************************/
+
+.resultIcons11 {
+    line-height: 100%;
+    visibility: hidden;
+}
+
+
+#item11:hover .resultIcons11 {
+    visibility: visible;
+}
+
+/************************************************************************/
+
+.resultIcons12 {
+    line-height: 100%;
+    visibility: hidden;
+}
+
+
+#item12:hover .resultIcons12 {
+    visibility: visible;
+}
+
+/************************************************************************/
+
+.resultIcons13 {
+    line-height: 100%;
+    visibility: hidden;
+}
+
+
+#item13:hover .resultIcons13 {
+    visibility: visible;
+}
+
+
+/************************************************************************/
+
+.resultIcons14 {
+    line-height: 100%;
+    visibility: hidden;
+}
+
+
+#item14:hover .resultIcons14 {
+    visibility: visible;
+}
+
+
+/************************************************************************/
+
+.resultIcons15 {
+    line-height: 100%;
+    visibility: hidden;
+}
+
+
+#item15:hover .resultIcons15 {
+    visibility: visible;
+}
+
+
+/************************************************************************/
+
+.resultIcons16 {
+    line-height: 100%;
+    visibility: hidden;
+}
+
+
+#item16:hover .resultIcons16 {
+    visibility: visible;
+}
+
+
+/************************************************************************/
+
+.resultIcons17 {
+    line-height: 100%;
+    visibility: hidden;
+}
+
+
+#item17:hover .resultIcons17 {
+    visibility: visible;
+}
+
+
+/************************************************************************/
+
+.resultIcons18 {
+    line-height: 100%;
+    visibility: hidden;
+}
+
+
+#item18:hover .resultIcons18 {
+    visibility: visible;
+}
+
+
+/************************************************************************/
+
+.resultIcons19 {
+    line-height: 100%;
+    visibility: hidden;
+}
+
+
+#item19:hover .resultIcons19 {
+    visibility: visible;
+}
+
+
+/************************************************************************/
+
+.resultIcons20 {
+    line-height: 100%;
+    visibility: hidden;
+}
+
+
+#item20:hover .resultIcons20 {
+    visibility: visible;
+}
 
 
 

@@ -14,23 +14,97 @@
 		<div class="row" id="row1">	
 			<ul style="list-style-type:none" class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-3 col-md-3 col-md-offset-2">
 				<li>Movies:
-					<ul>
-						<li><a href={{ res.movies_link1 }}>{{ res.movies_name1 }}</a></li>
-						<li><a href={{ res.movies_link2 }}>{{ res.movies_name2 }}</a></li>
-						<li><a href={{ res.movies_link3 }}>{{ res.movies_name3 }}</a></li>
-						<li><a href={{ res.movies_link4 }}>{{ res.movies_name4 }}</a></li>
-						<li><a href={{ res.movies_link5 }}>{{ res.movies_name5 }}</a></li>
+					<ul class="listItems">
+						
+						<li id="item1">
+							<a href={{ res.movies_link1 }}>{{ res.movies_name1 }}</a>
+								<ul class="resultIcons1">
+									<li class="resultIcon1"><a href={{ res.movies_link1 }}>AMZ</a></li>
+									<li class="resultIcon1"><a href={{ res.movies_imdb1 }}>IMDB</a></li>
+									<li><a href={{ res.movies_trailer1 }}>TRA</a></li>
+								</ul>	
+							</li>
+						<li id="item2" >
+							<a href={{ res.movies_link2 }}>{{ res.movies_name2 }}</a>
+								<ul class="resultIcons2">
+								<li class="resultIcon1"><a href={{ res.movies_link2 }}>AMZ</a></li>
+								<li class="resultIcon1"><a href={{ res.movies_imdb2 }}>IMDB</a></li>
+								<li><a href={{ res.movies_trailer2 }}>TRA</a></li>
+								</ul>
+						</li>
+							
+						<li id="item3" >
+							<a href={{ res.movies_link3 }}>{{ res.movies_name3 }}</a>
+							<ul class="resultIcons3">
+								<li class="resultIcon1"><a href={{ res.movies_link3 }}>AMZ</a></li>
+								<li class="resultIcon1"><a href={{ res.movies_imdb3 }}>IMDB</a></li>
+								<li><a href={{ res.movies_trailer3 }}>TRA</a></li>
+							</ul>	
+						</li>
+						<li id="item4" >
+							<a href={{ res.movies_link4 }}>{{ res.movies_name4 }}</a>
+							<ul class="resultIcons4">
+								<li class="resultIcon1"><a href={{ res.movies_link4 }}>AMZ</a></li>
+								<li class="resultIcon1"><a href={{ res.movies_imdb4 }}>IMDB</a></li>
+								<li><a href={{ res.movies_trailer4 }}>TRA</a></li>
+							
+							</ul>
+						</li>	
+						<li id="item5" >
+							<a href={{ res.movies_link5 }}>{{ res.movies_name5 }}</a>
+							<ul class="resultIcons5">
+								<li class="resultIcon1"><a href={{ res.movies_link5 }}>AMZ</a></li>
+								<li class="resultIcon1"><a href={{ res.movies_imdb5 }}>IMDB</a></li>
+								<li><a href={{ res.movies_trailer5 }}>TRA</a></li>
+							
+							</ul>
+						</li>	
 					</ul>
+
 				</li>
 			</ul>
 			<ul style="list-style-type:none" class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-2">
 				<li>Books:
-					<ul>
-						<li><a href={{ res.books_link1 }}>{{ res.books_name1 }}</a></li>
-						<li><a href={{ res.books_link2 }}>{{ res.books_name2 }}</a></li>
-						<li><a href={{ res.books_link3 }}>{{ res.books_name3 }}</a></li>
-						<li><a href={{ res.books_link4 }}>{{ res.books_name4 }}</a></li>
-						<li><a href={{ res.books_link5 }}>{{ res.books_name5 }}</a></li>
+					<ul class="listItems">
+						<li id="item6"><a href={{ res.books_link1 }}>{{ res.books_name1 }}</a>
+						<ul class="resultIcons6">
+							<li class="resultIcon1"><a href={{ res.books_link1  }}>AMZ</a></li>
+							<li><a href={{ res.movies_wiki1 }}>WIKI</a></li>
+						</ul>
+						</li>	
+
+						<li id="item7"><a href={{ res.books_link2 }}>{{ res.books_name2 }}</a>
+							<ul class="resultIcons7">
+							<li class="resultIcon1"><a href={{ res.books_link2 }}>AMZ</a></li>
+							<li><a href={{ res.movies_wiki2 }}>WIKI</a></li>
+						</ul>
+						</li>	
+
+
+						<li id="item8"><a href={{ res.books_link3 }}>{{ res.books_name3 }}</a>
+							<ul class="resultIcons8">
+							<li class="resultIcon1"><a href={{ res.books_link3  }}>AMZ</a></li>
+							<li><a href={{ res.movies_wiki3 }}>WIKI</a></li>
+						</ul>
+						</li>	
+
+
+						<li id="item9"><a href={{ res.books_link4 }}>{{ res.books_name4 }}</a>
+							<ul class="resultIcons9">
+							<li class="resultIcon1"><a href={{ res.books_link4  }}>AMZ</a></li>
+							<li><a href={{ res.movies_wiki4 }}>WIKI</a></li>
+						</ul>
+						</li>	
+
+
+						<li id="item10"><a href={{ res.books_link5 }}>{{ res.books_name5 }}</a>
+							<ul class="resultIcons10">
+							<li class="resultIcon1"><a href={{ res.books_link5 }}>AMZ</a></li>
+							<li><a href={{ res.movies_wiki5 }}>WIKI</a></li>
+						</ul>
+						</li>	
+
+
 					</ul>
 				</li>
 			</ul>
@@ -38,23 +112,103 @@
 		<div class="row" id="row2">		
 			<ul style="list-style-type:none" class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-3 col-md-3 col-md-offset-2">
 				<li>Songs:
-					<ul>
-						<li><a href={{ res.songs_link1 }}>{{ res.songs_name1 }}</a></li>
-						<li><a href={{ res.songs_link2 }}>{{ res.songs_name2 }}</a></li>
-						<li><a href={{ res.songs_link3 }}>{{ res.songs_name3 }}</a></li>
-						<li><a href={{ res.songs_link4 }}>{{ res.songs_name4 }}</a></li>
-						<li><a href={{ res.songs_link5 }}>{{ res.songs_name5 }}</a></li>
+					<ul class="listItems">
+						<li id="item11"><a href={{ res.songs_link1 }}>{{ res.songs_name1 }}</a>
+							<ul class="resultIcons11">
+							<li class="resultIcon1"><a href={{ res.songs_link1 }}>AMZ</a></li>	
+							<li class="resultIcon1"><a href={{ res.movies_wiki1 }}>WIKI</a></li>
+							<li><a href={{ res.songs_youtube1 }}>YT</a></li>
+						</ul>
+						</li>	
+
+
+						<li id="item12"><a href={{ res.songs_link2 }}>{{ res.songs_name2 }}</a>
+							<ul class="resultIcons12">
+							<li class="resultIcon1"><a href={{ res.songs_link2 }}>AMZ</a></li>	
+							<li class="resultIcon1"><a href={{ res.movies_wiki2 }}>WIKI</a></li>
+							<li><a href={{ res.songs_youtube2 }}>YT</a></li>
+						</ul>
+						</li>	
+
+
+						<li id="item13"><a href={{ res.songs_link3 }}>{{ res.songs_name3 }}</a>
+							<ul class="resultIcons13">
+							<li class="resultIcon1"><a href={{ res.songs_link3}}>AMZ</a></li>	
+							<li class="resultIcon1"><a href={{ res.movies_wiki3 }}>WIKI</a></li>
+							<li><a href={{ res.songs_youtube3 }}>YT</a></li>
+						</ul>
+						</li>	
+
+
+						<li id="item14"><a href={{ res.songs_link4 }}>{{ res.songs_name4 }}</a>
+							<ul class="resultIcons14">
+							<li class="resultIcon1"><a href={{ res.songs_link4 }}>AMZ</a></li>	
+							<li class="resultIcon1"><a href={{ res.movies_wiki4 }}>WIKI</a></li>
+							<li><a href={{ res.songs_youtube4 }}>YT</a></li>
+						</ul>
+						</li>	
+
+
+						<li id="item15"><a href={{ res.songs_link5 }}>{{ res.songs_name5 }}</a>
+							<ul class="resultIcons15">
+							<li class="resultIcon1"><a href={{ res.songs_link5 }}>AMZ</a></li>	
+							<li class="resultIcon1"><a href={{ res.movies_wiki5 }}>WIKI</a></li>
+							<li><a href={{ res.songs_youtube5 }}>YT</a></li>
+						</ul>
+						</li>	
+
+
 					</ul>
 				</li>
 			</ul>
 			<ul style="list-style-type:none" class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-2">
 				<li>Series:
-					<ul>
-						<li><a href={{ res.series_link1 }}>{{ res.series_name1 }}</a></li>
-						<li><a href={{ res.series_link2 }}>{{ res.series_name2 }}</a></li>
-						<li><a href={{ res.series_link3 }}>{{ res.series_name3 }}</a></li>
-						<li><a href={{ res.series_link4 }}>{{ res.series_name4 }}</a></li>
-						<li><a href={{ res.series_link5 }}>{{ res.series_name5 }}</a></li>
+					<ul class="listItems">
+						<li id="item16"><a href={{ res.series_link1 }}>{{ res.series_name1 }}</a>
+							<ul class="resultIcons16">
+							<li class="resultIcon1"><a href={{ res.series_link1 }}>AMZ</a></li>
+							<li class="resultIcon1"><a href={{ res.series_imdb1 }}>IMDB</a></li>
+							<li><a href={{ res.series_trailer1 }}>TRA</a></li>
+						</ul>
+						</li>	
+
+
+						<li id="item17"><a href={{ res.series_link2 }}>{{ res.series_name2 }}</a>
+							<ul class="resultIcons17">
+							<li class="resultIcon1"><a href={{ res.series_link2 }}>AMZ</a></li>
+							<li class="resultIcon1"><a href={{ res.series_imdb2 }}>IMDB</a></li>
+							<li><a href={{ res.series_trailer2 }}>TRA</a></li>
+						</ul>
+						</li>	
+
+
+						<li id="item18"><a href={{ res.series_link3 }}>{{ res.series_name3 }}</a>
+							<ul class="resultIcons18">
+							<li class="resultIcon1"><a href={{ res.series_link3 }}>AMZ</a></li>
+							<li class="resultIcon1"><a href={{ res.series_imdb3 }}>IMDB</a></li>
+							<li><a href={{ res.series_trailer3 }}>TRA</a></li>
+						</ul>
+						</li>	
+
+
+						<li id="item19"><a href={{ res.series_link4 }}>{{ res.series_name4 }}</a>
+							<ul class="resultIcons19">
+							<li class="resultIcon1"><a href={{ res.series_link4 }}>AMZ</a></li>
+							<li class="resultIcon1"><a href={{ res.series_imdb4 }}>IMDB</a></li>
+							<li><a href={{ res.series_trailer4 }}>TRA</a></li>
+						</ul>
+						</li>	
+
+
+						<li id="item20"><a href={{ res.series_link5 }}>{{ res.series_name5 }}</a>
+							<ul class="resultIcons20">
+							<li class="resultIcon1"><a href={{ res.series_link5 }}>AMZ</a></li>
+							<li class="resultIcon1"><a href={{ res.series_imdb5 }}>IMDB</a></li>
+							<li><a href={{ res.series_trailer5 }}>TRA</a></li>
+						</ul>
+						</li>	
+
+
 					</ul>
 				</li>
 			</ul>
