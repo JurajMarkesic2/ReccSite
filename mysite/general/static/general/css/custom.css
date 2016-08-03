@@ -253,10 +253,20 @@ input[type='radio']:checked:after {
     font-weight: bold;
 }
 
+
+
 .listItems li {
     color: #56527F;
-    list-style-type: disc;
+    list-style: disc;
     font-size: 120%;
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .listItems li {
+        clear: left;
+    }
+    
 }
 
 
@@ -264,11 +274,18 @@ input[type='radio']:checked:after {
    font-size: 18px;
     color: #1d1d1d;
 
+
 }
 
 ul .listItems{
     background-color: #FBECD5;
 }
+
+.bp li {
+    list-style: none;
+
+}
+
 
 #desc {
     margin-top: 1%;
@@ -286,18 +303,26 @@ ul .listItems{
     }
 }    
 
+
+li a img {
+    max-width: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 .listItems {
-    line-height: 350%;
+    line-height: 200%;
 
 }
 
 .resultIcon1 {
     float:left;
     margin-right: 30px;
+
 }
 /************************************************************************/
 .resultIcons1 {
-    line-height: 100%;
+    line-height: 200%;
     visibility: hidden;
 }
 
@@ -310,7 +335,7 @@ ul .listItems{
 
 
 .resultIcons2 {
-    line-height: 100%;
+    line-height: 200%;
     visibility: hidden;
 }
 
@@ -322,7 +347,7 @@ ul .listItems{
 /************************************************************************/
 
 .resultIcons3 {
-    line-height: 100%;
+    line-height: 200%;
     visibility: hidden;
 }
 
@@ -334,7 +359,7 @@ ul .listItems{
 /************************************************************************/
 
 .resultIcons4 {
-    line-height: 100%;
+    line-height: 200%;
     visibility: hidden;
 }
 
@@ -346,7 +371,7 @@ ul .listItems{
 /************************************************************************/
 
 .resultIcons5 {
-    line-height: 100%;
+    line-height: 200%;
     visibility: hidden;
 }
 
@@ -356,10 +381,13 @@ ul .listItems{
 }
 
 
+
+
+
 /************************************************************************/
 
 .resultIcons6 {
-    line-height: 100%;
+    line-height: 200%;
     visibility: hidden;
 }
 
@@ -372,7 +400,7 @@ ul .listItems{
 /************************************************************************/
 
 .resultIcons7 {
-    line-height: 100%;
+    line-height: 200%;
     visibility: hidden;
 }
 
@@ -385,7 +413,7 @@ ul .listItems{
 /************************************************************************/
 
 .resultIcons8 {
-    line-height: 100%;
+    line-height: 200%;
     visibility: hidden;
 }
 
@@ -398,7 +426,7 @@ ul .listItems{
 /************************************************************************/
 
 .resultIcons9 {
-    line-height: 100%;
+    line-height: 200%;
     visibility: hidden;
 }
 
@@ -406,12 +434,17 @@ ul .listItems{
 #item9:hover .resultIcons9 {
     visibility: visible;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+    .resultIcons9 {
+        line-height: 150%;
+    }
+}
 
 
 /************************************************************************/
 
 .resultIcons10 {
-    line-height: 100%;
+    line-height: 200%;
     visibility: hidden;
 }
 
@@ -421,10 +454,11 @@ ul .listItems{
 }
 
 
+
 /************************************************************************/
 
 .resultIcons11 {
-    line-height: 100%;
+    line-height: 200%;
     visibility: hidden;
 }
 
@@ -436,7 +470,7 @@ ul .listItems{
 /************************************************************************/
 
 .resultIcons12 {
-    line-height: 100%;
+    line-height: 200%;
     visibility: hidden;
 }
 
@@ -448,7 +482,7 @@ ul .listItems{
 /************************************************************************/
 
 .resultIcons13 {
-    line-height: 100%;
+    line-height: 200%;
     visibility: hidden;
 }
 
@@ -461,7 +495,7 @@ ul .listItems{
 /************************************************************************/
 
 .resultIcons14 {
-    line-height: 100%;
+    line-height: 200%;
     visibility: hidden;
 }
 
@@ -474,7 +508,7 @@ ul .listItems{
 /************************************************************************/
 
 .resultIcons15 {
-    line-height: 100%;
+    line-height: 200%;
     visibility: hidden;
 }
 
@@ -487,7 +521,7 @@ ul .listItems{
 /************************************************************************/
 
 .resultIcons16 {
-    line-height: 100%;
+    line-height: 200%;
     visibility: hidden;
 }
 
@@ -500,7 +534,7 @@ ul .listItems{
 /************************************************************************/
 
 .resultIcons17 {
-    line-height: 100%;
+    line-height: 200%;
     visibility: hidden;
 }
 
@@ -513,7 +547,7 @@ ul .listItems{
 /************************************************************************/
 
 .resultIcons18 {
-    line-height: 100%;
+    line-height: 200%;
     visibility: hidden;
 }
 
@@ -526,7 +560,7 @@ ul .listItems{
 /************************************************************************/
 
 .resultIcons19 {
-    line-height: 100%;
+    line-height: 200%;
     visibility: hidden;
 }
 
@@ -539,7 +573,7 @@ ul .listItems{
 /************************************************************************/
 
 .resultIcons20 {
-    line-height: 100%;
+    line-height: 200%;
     visibility: hidden;
 }
 
