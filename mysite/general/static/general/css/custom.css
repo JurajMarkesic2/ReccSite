@@ -434,11 +434,6 @@ li a img {
 #item9:hover .resultIcons9 {
     visibility: visible;
 }
-@media (min-width: 768px) and (max-width: 991px) {
-    .resultIcons9 {
-        line-height: 150%;
-    }
-}
 
 
 /************************************************************************/
